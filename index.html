@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect coverflow</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="swiper_plaging">
+    <h1>Effect coverflow</h1>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/pic5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic3.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+</section>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 700,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+            loop:true,
+           autoplay:{
+            delay:3000,
+           },
+    
+        });
+      </script>
+</body>
+</html>
